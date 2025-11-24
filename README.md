@@ -20,20 +20,6 @@ Provision a local Docker container (NGINX) using Terraform, applying Infrastruct
 
 <h2>🧰 Tools Used</h2>
 
-| Tool     | Column 2 | Column 3 |
-|----------|----------|----------|
-| Row 1    | Data A   | Data B   |
-| Row 2    | Data C   | Data D   |
-
-
-
-
-
-
-
-
-
-
 |    Tool	   |           Description                  |
 |--------------|----------------------------------------|
 |Terraform	   |  IaC tool to provision infrastructure  |
