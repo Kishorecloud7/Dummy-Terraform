@@ -1,1 +1,5 @@
-terraform apply -auto-approve | tee logs/terraform-apply.log
+docker_image.nginx_image: Creating...
+docker_image.nginx_image: Creation complete after 4s [id=sha256:a29e0a...]
+docker_container.nginx_container: Creating...
+docker_container.nginx_container: Creation complete after 2s [id=3cde1...]
+Apply complete! Resources: 2 added, 0 changed, 0 destroyed.
