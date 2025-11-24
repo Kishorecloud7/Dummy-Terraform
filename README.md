@@ -4,11 +4,17 @@ Provision a local Docker container (NGINX) using Terraform, applying Infrastruct
 
 <h2>📚 Table of Contents<h2>
 * Tools Used
+
 * Project Structure
+
 * Prerequisites
+
 * Step-by-Step Workflow
+
 * Output
+
 * Cleanup
+
 * Outcome
 
 <h2>🧰 Tools Used</h2>
