@@ -1,0 +1,1 @@
+terraform plan | tee logs/terraform-plan.log
