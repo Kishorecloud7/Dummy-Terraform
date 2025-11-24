@@ -2,7 +2,7 @@
 <h2>📌 Objective</h2>
 Provision a local Docker container (NGINX) using Terraform, applying Infrastructure as Code (IaC) principles.
 
-<h2>📚 Table of Contents<h2>
+<h2>📚 Table of Contents</h2>
 * Tools Used
 
 * Project Structure
