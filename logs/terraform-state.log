@@ -1,1 +1,2 @@
-terraform state list | tee logs/terraform-state.log
+docker_image.nginx_image
+docker_container.nginx_container
