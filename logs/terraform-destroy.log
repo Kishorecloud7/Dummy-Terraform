@@ -1,0 +1,1 @@
+terraform destroy -auto-approve | tee logs/terraform-destroy.log
