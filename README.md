@@ -48,7 +48,7 @@ Install the following:
 
 * Terraform: https://developer.hashicorp.com/terraform/downloads
 * Docker: https://docs.docker.com/get-docker/
-Verify installations: terraform -version docker --version docker info
+* Verify installations: terraform -version docker --version docker info
 
 <h2>🚀 Step-by-Step Workflow</h2>
 <h3>1️⃣ Create Terraform Configuration (main.tf)</h3>
