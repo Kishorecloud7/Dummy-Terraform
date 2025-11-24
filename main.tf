@@ -9,25 +9,22 @@ terraform {
 
 provider "docker" {}
 
-# Step 1: Reference the image from the registry
+# Step 1: Read the latest image from Docker Hub
 resource "docker_registry_image" "nginx" {
   name = "nginx:latest"
 }
 
-# Step 2: Pull the image using docker_image (valid for v3.x)
+# Step 2: Pull the image locally
 resource "docker_image" "nginx_image" {
-  name          = docker_registry_image.nginx.name
-  keep_locally  = true
-
-  pull_triggers = [
-    docker_registry_image.nginx.sha256_digest
-  ]
+  name         = docker_registry_image.nginx.name
+  pull_triggers = [docker_registry_image.nginx.sha256_digest]
+  keep_locally = true
 }
 
-# Step 3: Create container
+# Step 3: Create the container
 resource "docker_container" "nginx_container" {
   name  = "my-nginx"
-  image = docker_image.nginx_image.name
+  image = docker_image.nginx_image.image_id
 
   ports {
     internal = 80
