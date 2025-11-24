@@ -35,11 +35,9 @@ Provision a local Docker container (NGINX) using Terraform, applying Infrastruct
 
 
 |    Tool	   |           Description                  |
-
+|--------------|----------------------------------------|
 |Terraform	   |  IaC tool to provision infrastructure  |
-
 |Docker	       |  Containerization platform             |
-
 |Provider	   |  kreuzwerker/docker for Docker control |
 
 
