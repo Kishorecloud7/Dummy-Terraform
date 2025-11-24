@@ -19,8 +19,9 @@ Provision a local Docker container (NGINX) using Terraform, applying Infrastruct
 * Outcome
 
 <h2>🧰 Tools Used</h2>
+
 |    Tool	   |           Description                  |
-|--------------|----------------------------------------|
+
 |Terraform	   |  IaC tool to provision infrastructure  |
 
 |Docker	       |  Containerization platform             |
@@ -106,6 +107,9 @@ terraform destroy -auto-approve | tee logs/terraform-destroy.log
 ```
 
 <h2>✅ Outcome</h2>
+
 * Used Terraform as IaC
+
 * Pulled and deployed Docker image
+
 * Managed infrastructure lifecycle using Terraform
