@@ -1,0 +1,1 @@
+terraform apply -auto-approve | tee logs/terraform-apply.log
