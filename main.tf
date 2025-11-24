@@ -14,10 +14,12 @@ resource "docker_registry_image" "nginx" {
   name = "nginx:latest"
 }
 
-# Step 2: Pull the image locally
+# Step 2: Pull the image locally (CORRECT v3 syntax)
 resource "docker_image" "nginx_image" {
-  name         = docker_registry_image.nginx.name
-  pull_triggers = [docker_registry_image.nginx.sha256_digest]
+  pull {
+    name = docker_registry_image.nginx.name
+  }
+
   keep_locally = true
 }
 
