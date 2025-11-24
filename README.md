@@ -3,6 +3,7 @@
 Provision a local Docker container (NGINX) using Terraform, applying Infrastructure as Code (IaC) principles.
 
 <h2>📚 Table of Contents</h2>
+
 * Tools Used
 
 * Project Structure
@@ -19,14 +20,27 @@ Provision a local Docker container (NGINX) using Terraform, applying Infrastruct
 
 <h2>🧰 Tools Used</h2>
 |    Tool	   |           Description                  |
+|--------------|----------------------------------------|
 |Terraform	   |  IaC tool to provision infrastructure  |
+
 |Docker	       |  Containerization platform             |
+
 |Provider	   |  kreuzwerker/docker for Docker control |
 
 <h2>📁 Project Structure</h2>
 
 ```
-terraform-docker-container/ ├── main.tf ├── terraform.tfstate ├── README.md └── logs/ ├── terraform-init.log ├── terraform-plan.log ├── terraform-apply.log ├── terraform-state.log └── terraform-destroy.log
+terraform-docker-container/
+├── main.tf 
+├── terraform.tfstate 
+├── README.md 
+└── logs/ 
+
+├── terraform-init.log 
+├── terraform-plan.log 
+├── terraform-apply.log 
+├── terraform-state.log 
+└── terraform-destroy.log
 ```
 
 <h2>⚙️ Prerequisites</h2>
