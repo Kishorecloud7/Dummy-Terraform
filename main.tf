@@ -9,12 +9,10 @@ terraform {
 
 provider "docker" {}
 
-# Pull nginx image
 resource "docker_image" "nginx_image" {
   name = "nginx:latest"
 }
 
-# Run container
 resource "docker_container" "nginx_container" {
   name  = "my-nginx"
   image = docker_image.nginx_image.latest
